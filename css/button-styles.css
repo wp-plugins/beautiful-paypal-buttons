@@ -1,0 +1,54 @@
+button.ClassyPaypal-button {font-size: 14px;}
+
+button.ClassyPaypal-style-default, button.ClassyPaypal-style-three {padding: 10px 20px;border-radius: 0;border: medium none;color: #fff;}
+
+
+button.ClassyPaypal-style-one, button.ClassyPaypal-style-two {background: none;border: 2px solid;padding: 8px 18px;}
+
+
+button.ClassyPaypal-style-one {
+  
+  border-radius: 0;
+  
+  
+}
+
+
+button.ClassyPaypal-style-two {
+  background: none;
+
+  border-radius: 30px;
+}
+
+button.ClassyPaypal-style-three {
+  background: none;
+  position: relative;
+  z-index: 2;
+}
+
+button.ClassyPaypal-style-three::before {
+  bottom: 0;
+  content: "";
+  height: 4px;
+  left: 0;
+  opacity: 1;
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+}
+
+button.ClassyPaypal-style-three::after {
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+
+button.ClassyPaypal-style-default:hover, button.ClassyPaypal-style-three:hover {opacity: .7;color: #fff}
+
+button.ClassyPaypal-style-one:hover, button.ClassyPaypal-style-two:hover {background: none;border-color: #000;color: #000}
